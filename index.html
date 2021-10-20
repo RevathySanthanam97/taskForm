@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="headerSect">
+            <h3 class="title">Start your investment today</h3>
+            <p class="subtitle">Apply for our premium Xerago International relationship to experience our offshore investment expertise. We will get in touch with you in one buisiness day.</p>
+        </div>
+        <form class="inputForm" action="submit">
+            <div class="inputSect">
+                <div class="input">
+                    <div class="fname">
+                        <label for="fname">Full Name</label>
+                        <input required type="text" name="fname" class="fnameIp">
+                    </div>
+                    <div class="email">
+                        <label for="email">Email</label>
+                        <input required type="email" name="email" class="emailIp">
+                    </div>
+                    <div class="nation">
+                        <label for="nationality">Nationality</label>
+                        <select name="nationality" id="" required>
+                            <option value="Antarctica">Antarctica</option>
+                            <option value="Australia">Australia</option>
+                            <option value="India">India</option>
+                            <option value="United Arab Emirates">United Arab Emirates</option>
+                            <option value="United Kingdom" selected>United Kingdom</option>
+                            <option value="United States">United States</option>
+                        </select>
+                    </div>
+                    <div class="country">
+                        <label for="country">Country of residence</label>
+                        <select name="country" id="" required>
+                            <option value="">select</option>
+                            <option value="Antarctica">Antarctica</option>
+                            <option value="Australia">Australia</option>
+                            <option value="India">India</option>
+                            <option value="United Arab Emirates">United Arab Emirates</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="United States">United States</option>
+                        </select>
+                    </div>
+                    <div class="mobNum">
+                        <label for="mobNum">Phone Numbers</label>
+                        <input required type="text" value="91&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;" name="mobNum" class="mobNumIp">
+                    </div>
+                </div>
+                <div class="fund">
+                    <p>I will fund my account at least $2000,000</p>
+                    <div class="fundIp">
+                        <input type="radio" required name="fund">
+                        <span class="radioBtnText">&nbsp;&nbsp;&nbsp;Yes</span>
+                        <input type="radio" name="fund">
+                        <span>&nbsp;&nbsp;&nbsp;No</span>
+                    </div>
+                </div>
+                <div class="accUse">
+                    <p>This account will be for personal use only</p>
+                    <div class="accIp">
+                        <input type="radio" required name="accUse">
+                        <span class="radioBtnText">&nbsp;&nbsp;&nbsp;Yes</span>
+                        <input type="radio" name="accUse">
+                        &nbsp;&nbsp;&nbsp;No</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="subscribe">
+                    <input type="checkbox" name="subscribe" class="subscribeIp">
+                    <label for="subscribe">&nbsp;&nbsp;&nbsp;We would like to send you information about our events, offers and more. Please uncheck the box if you do not want to receive this.</label>
+                </div>
+                <button type="submit" class="submitBtn">
+                    Apply Now
+                </button>
+                <p class="info">You must maintain an average monthly balance of $200,000 otherwise a monthly relationship fee of $150 will apply (this is the fee for maintaining the account).</p>
+            </div>
+        </form>
+    </div>
+<script src="./script.js"></script>
+</body>
+</html>
