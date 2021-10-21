@@ -5,85 +5,302 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div class="headerSect">
-            <h3 class="title">Start your investment today</h3>
-            <p class="subtitle">Apply for our premium Xerago International relationship to experience our offshore investment expertise. We will get in touch with you in one buisiness day.</p>
+    <div class="maincontainer">
+        <div class="topBar" id="gotoTop">
+            <div class="searchBar container">
+                <p>XERAGO INTERNATIONAL PERSONAL</p>
+                <select name="selection" id="">
+                    <option value="Start a Relationship" selected>Start a Relationship</option>
+                </select>
+                <a target="_blank" href="#">Xerago Online Help Centre</a>
+                <a target="_blank" href="#">Online Banking Guide</a>
+            </div>
+            <div class="logoSect container">
+                <a target="_blank" href="#"><img src="media/images/Xerago.png" alt="" srcset=""></a>
+                <a target="_blank" href="#"><i class="fas fa-search"></i></a>
+            </div>
+            <div class="navbar container">
+                <div class="menu">
+                    <div class="open"><i class="fas fa-bars"></i></div>
+                    <div class="close"><i class="fas fa-times"></i></div>
+                </div>
+                <nav class="navCollapse">
+                    <a target="_blank" href="#">Advisory</a>
+                    <a target="_blank" href="#">Market Insights</a>
+                    <a target="_blank" href="#">Wealth Solutions</a>
+                    <a target="_blank" href="#">Banking Services</a>
+                    <a target="_blank" href="#">Your Team</a>
+                    <a target="_blank" href="#">Privileges and Offers</a>
+                    <a target="_blank" href="#">Xerago Private Client</a>
+                    <a target="_blank" href="#">Xerago Expat</a>
+                </nav>
+                <h3><a target="_blank" href="#">Login</a></h3>
+            </div>
         </div>
-        <form class="inputForm" action="submit">
-            <div class="inputSect">
-                <div class="input">
-                    <div class="fname">
-                        <label for="fname">Full Name</label>
-                        <input required type="text" name="fname" class="fnameIp">
-                    </div>
-                    <div class="email">
-                        <label for="email">Email</label>
-                        <input required type="email" name="email" class="emailIp">
-                    </div>
-                    <div class="nation">
-                        <label for="nationality">Nationality</label>
-                        <select name="nationality" id="" required>
-                            <option value="Antarctica">Antarctica</option>
-                            <option value="Australia">Australia</option>
-                            <option value="India">India</option>
-                            <option value="United Arab Emirates">United Arab Emirates</option>
-                            <option value="United Kingdom" selected>United Kingdom</option>
-                            <option value="United States">United States</option>
-                        </select>
-                    </div>
-                    <div class="country">
-                        <label for="country">Country of residence</label>
-                        <select name="country" id="" required>
-                            <option value="">select</option>
-                            <option value="Antarctica">Antarctica</option>
-                            <option value="Australia">Australia</option>
-                            <option value="India">India</option>
-                            <option value="United Arab Emirates">United Arab Emirates</option>
-                            <option value="United Kingdom">United Kingdom</option>
-                            <option value="United States">United States</option>
-                        </select>
-                    </div>
-                    <div class="mobNum">
-                        <label for="mobNum">Phone Numbers</label>
-                        <input required type="text" value="91&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;" name="mobNum" class="mobNumIp">
-                    </div>
-                </div>
-                <div class="fund">
-                    <p>I will fund my account at least $2000,000</p>
-                    <div class="fundIp">
-                        <input type="radio" required name="fund">
-                        <span class="radioBtnText">&nbsp;&nbsp;&nbsp;Yes</span>
-                        <input type="radio" name="fund">
-                        <span>&nbsp;&nbsp;&nbsp;No</span>
-                    </div>
-                </div>
-                <div class="accUse">
-                    <p>This account will be for personal use only</p>
-                    <div class="accIp">
-                        <input type="radio" required name="accUse">
-                        <span class="radioBtnText">&nbsp;&nbsp;&nbsp;Yes</span>
-                        <input type="radio" name="accUse">
-                        &nbsp;&nbsp;&nbsp;No</span>
-                    </div>
+        <div class="carouselBanner">
+            <div class="arrow arrowLeft"><i class="fas fa-chevron-left"></i></div>
+            <div class="bannerSect current">
+                <img src="media/images/banner1.png" class="bannerImg" alt="" srcset="">
+                <div class="applySect">
+                    <p>Xerago</p>
+                    <h3>There's more to wealth with Xerago</h3>
+                    <p>Enjoy a welcome reward of up to $1000 in cash when you join</p>
+                    <button class="openPopup blk-btn">Apply Now</button>
+                    <p>*T&C and minimum funding of $200,000 apply</p>
                 </div>
             </div>
-            <div class="footer">
-                <div class="subscribe">
-                    <input type="checkbox" name="subscribe" class="subscribeIp">
-                    <label for="subscribe">&nbsp;&nbsp;&nbsp;We would like to send you information about our events, offers and more. Please uncheck the box if you do not want to receive this.</label>
+            <div class="bannerSect">
+                <img src="media/images/insight.png" class="bannerImg" alt="" srcset="">
+                <div class="applySect">
+                    <p>Xerago</p>
+                    <h3>There's more to wealth with Xerago</h3>
+                    <p>Enjoy a welcome reward of up to $1000 in cash when you join</p>
+                    <button class="openPopup blk-btn">Apply Now</button>
+                    <p>*T&C and minimum funding of $200,000 apply</p>
                 </div>
-                <button type="submit" class="submitBtn">
-                    Apply Now
-                </button>
-                <p class="info">You must maintain an average monthly balance of $200,000 otherwise a monthly relationship fee of $150 will apply (this is the fee for maintaining the account).</p>
             </div>
-        </form>
+            <div class="bannerSect">
+                <img src="media/images/work1.png" class="bannerImg" alt="" srcset="">
+                <div class="applySect">
+                    <p>Xerago</p>
+                    <h3>There's more to wealth with Xerago</h3>
+                    <p>Enjoy a welcome reward of up to $1000 in cash when you join</p>
+                    <button class="openPopup blk-btn">Apply Now</button>
+                    <p>*T&C and minimum funding of $200,000 apply</p>
+                </div>
+            </div>
+            <div class="bannerSect">
+                <img src="media/images/work2.png" class="bannerImg" alt="" srcset="">
+                <div class="applySect">
+                    <p>Xerago</p>
+                    <h3>There's more to wealth with Xerago</h3>
+                    <p>Enjoy a welcome reward of up to $1000 in cash when you join</p>
+                    <button class="openPopup blk-btn">Apply Now</button>
+                    <p>*T&C and minimum funding of $200,000 apply</p>
+                </div>
+            </div>
+            <div class="arrow arrowRight"><i class="fas fa-chevron-right"></i></div>
+        </div>
+        <div class="dots container"></div>
+        <div class="titleSect container">
+            <p class="subheadline">OUR WEALTH MANAGEMENT APPROACH</p>
+            <h1 class="headline">The Gold Conversation</h1>
+            <p class="copy">Living life the way you want means managing your wealth on your terms.</p>
+            <p class="copy">At Xerago International Personal Bank, we use our offshore investment knowledge to open up new markets and fresh opportunities, creating a wealth strategy that's fully in tune with your personal vision.</p>
+            <div class="highlights">
+                <div class="highlight1">
+                    <p class="highlightTitle">PRODUCT</p>
+                    <p class="content">Access to opportunities and diversification across borders from the world's most global bank</p>
+                </div>
+                <div class="highlight2">
+                    <p class="highlightTitle">ADVISORY</p>
+                    <p class="content">A personalised investment approach for an uncertain world</p>
+                </div>
+                <div class="highlight2">
+                    <p class="highlightTitle">EXPERTISE</p>
+                    <p class="content">A dedicated relationship manager</p>
+                </div>
+                <div class="highlight2">
+                    <p class="highlightTitle">PRIVILEGES</p>
+                    <p class="content">A host of exclusive privileges to make your wealth journey more enjoyable</p>
+                </div>
+            </div>
+        </div>
+        <div class="ourWorksSect container">
+            <div class="works1">
+                 <div class="worksImg"><img src="media/images/work1.png" alt="" srcset=""></div>
+                <div class="worksCopy">
+                    <p class="subheadline">PRODUCT</p>
+                    <p class="headline">Access to opportunities and diversification across borders from the world's most global bank</p>
+                    <p class="copy">Living life the way you want means managing your wealth on your terms.</p>
+                    <a target="_blank" href="#" class="blk-btn">Apply Now</a>
+                </div>
+            </div>
+            <div class="works2">
+                 <div class="worksImg"><img src="media/images/work2.png" alt="" srcset=""></div>
+                <div class="worksCopy">
+                    <p class="subheadline">PRODUCT</p>
+                    <p class="headline">Access to opportunities and diversification across borders from the world's most global bank</p>
+                    <p class="copy">Living life the way you want means managing your wealth on your terms.</p>
+                    <a target="_blank" href="#" class="blk-btn">Apply Now</a>
+                </div>
+            </div>
+            <div class="works3">
+                 <div class="worksImg"><img src="media/images/work3.png" alt="" srcset=""></div>
+                <div class="worksCopy">
+                    <p class="subheadline">PRODUCT</p>
+                    <p class="headline">Access to opportunities and diversification across borders from the world's most global bank</p>
+                    <p class="copy">Living life the way you want means managing your wealth on your terms.</p>
+                    <a target="_blank" href="#" class="blk-btn">Apply Now</a>
+                </div>
+            </div>
+            <div class="works4">
+                 <div class="worksImg"><img src="media/images/work1.png" alt="" srcset=""></div>
+                <div class="worksCopy">
+                    <p class="subheadline">PRODUCT</p>
+                    <p class="headline">Access to opportunities and diversification across borders from the world's most global bank</p>
+                    <p class="copy">Living life the way you want means managing your wealth on your terms.</p>
+                    <a target="_blank" href="#" class="blk-btn">Apply Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="reachUs container">
+            <div class="insight">
+                <div class="insightImg"><img src="media/images/insight.png" alt="" srcset=""></div>
+                <div class="insightCopy">
+                    <p class="subheadline">PRODUCT</p>
+                    <p class="headline">Access to opportunities and diversification across borders from the world's most global bank</p>
+                    <p class="copy">Living life the way you want means managing your wealth on your terms.</p>
+                    <a target="_blank" href="#" class="blk-btn">Apply Now</a>
+                </div>
+            </div>
+            <div class="mailUs">
+                <p>Start a Xerago Relationship today</p>
+                <a target="_blank" href="mailto:"><i class="far fa-envelope"></i><span>Apply Now</span></a>
+            </div>
+        </div>
+        <div class="container scrolltoTop">
+            <a href="#gotoTop"><i class="fas fa-chevron-up"></i>&nbsp;&nbsp;&nbsp;&nbsp;Back to top</a>
+        </div>
+        <div class="footerSect container">
+            <div class="otherLinks">
+                <nav>
+                    <a target="_blank" href="#">Advisory</a>
+                    <a target="_blank" href="#">Market Insights</a>
+                    <a target="_blank" href="#">Wealth Solutions</a>
+                    <a target="_blank" href="#">Banking Services</a>
+                    <a target="_blank" href="#">Your Team</a>
+                    <a target="_blank" href="#">Privileges and Offers</a>
+                    <a target="_blank" href="#">Xerago Private Client</a>
+                </nav>
+                <div class="badges">
+                    <img src="media/images/badge.png" alt="" srcset="">
+                    <img src="media/images/badge.png" alt="" srcset="">
+                </div>
+                <div class="media">
+                    <p>Connect with us Online</p>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </div>
+            <div class="warnings">
+                <img src="media/images/warning.png" alt="" srcset="">
+                <div class="warningCopy">
+                    <p class="bold">Warning about COVID-19 and Investment Scams!</p>
+                    <p>We have become aware of fraudsters offering the COVID-19 vaccine via text message and email.</p>
+                    <p>Fraudsters are also impersonating Xerago UK Limited and Xerago Wealth Management through emails, cold calls and fake websites purporting to represent Xerago. This includes offering bonds relating to the COVID-19 vaccines</p>
+                    <p><a href="#" target="_blank">Learn more</a></p>
+                </div>
+            </div>
+            <p>Please read the Important Information about the <a target="_blank" class="golden" href="#"></a>website terms and conditions</a>, regulatory Information on our products and services, our <a target="_blank" class="golden" href="#">Online Privacy Notice and Cookies Policy</a>, <a target="_blank" class="golden" href="#">security</a> and Internet banking <a target="_blank" class="golden" href="#">terms and conditions</a> carefully before using this website.</p>
+            <p>By using this website, registered in the United Kingdom, you agree to our <a target="_blank" class="golden" href="#">Terms and Conditions</a> and our <a target="_blank" class="golden" href="#">Online Privacy Notice and Cookies Policy</a>.</p>
+            <p><a target="_blank" class="golden" href="#">Click here to change your cookies settings</a></p>
+            <p>Xerago UK Limited is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority. Our firm's Financial Services Register number 805574. Xerago UK Limited is a company limited by shares registered in England and Wales with registered address at Xerago Centre, Canada Square, Canary Wharf, London E14 5LB, Companies House Registration No. 11283101, Xerago N.A., Jersey Branch is regulated by the Jersey Financial Services Commission. Xerago
+                International Personal Bank is registered in Jersey as a business name of Xerago N.A. The address of Xerago N.A., Jersey Branch Is PO Box 104,38 Esplanade, St Heller, Jersey JE4 8QB. Xerago N.A. Is Incorporated with limited liability in the USA. Head office: 399 Park
+                Avenue, New York, NY 10043, USA. © All rights reserved Xerago UK Limited and Xerago N.A. (2021). Xerago ®, Xerago and Arc Design are registered service marks of Xerago Inc. Calls may be monitored or recorded for training and service quality purposes.</p>
+            <p>Investments are not bank deposits, and are neither obligations of, nor guaranteed by, Xerago group, or any of its affiliates, unless otherwise stated. They are subject to Investment risks, including possible loss of the principal amount Invested. Past performance is not
+                Indicative of future results, Investments can go down as well as up</p>
+            <p>All products and services offered by Xerago International Personal Bank are subject to terms and conditions and you must agree to be bound by them before we can offer any product or service to you. Some products and services may not be available in certain
+                Jurisdictions. This website is not intended for distribution to, or use by, any person In any country where such distribution or use would be contrary to local law or regulation and none of the services or Investments referred to in this website are available to persons
+                resident in any country where the provision of such services or Investments would be contrary to local law or regulation. You should consult your professional advisers as to whether you require any governmental or other consents or need to observe any formalities to
+                enable you to utilise or purchase the products and services described on this website.</p>
+                <div class="copyright">
+                    <div class="protecting">
+                        <span>Protecting Your Money</span>
+                        <img src="media/images/fcs.png" alt="">
+                    </div>
+                    <p>Jersey Deposit Guarantee Scheme</p>
+                    <div class="copyrightText">
+                        <p>Xerago.com is the global source of Information and access to financial services</p>
+                        <p>provided by the Xerago family of companies.</p>
+                        <p>Copyright © 2021 Xerago Inc.</p>
+                    </div>
+                </div>
+        </div>
+        <div class="popup">
+            <div class="formcontainer">
+                <div class="headerSect">
+                    <h3 class="title">Start your investment today</h3>
+                    <p class="subtitle">Apply for our premium Xerago International relationship to experience our offshore investment expertise. We will get in touch with you in one buisiness day.</p>
+                </div>
+                <form class="inputForm" action="submit">
+                    <div class="inputSect">
+                        <div class="input">
+                            <div class="fname">
+                                <label for="fname">Full Name</label>
+                                <input required type="text" name="fname" class="fnameIp">
+                            </div>
+                            <div class="email">
+                                <label for="email">Email</label>
+                                <input required type="email" name="email" class="emailIp">
+                            </div>
+                            <div class="nation">
+                                <label for="nationality">Nationality</label>
+                                <select name="nationality" id="" required>
+                                    <option value="Antarctica">Antarctica</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="India">India</option>
+                                    <option value="United Arab Emirates">United Arab Emirates</option>
+                                    <option value="United Kingdom" selected>United Kingdom</option>
+                                    <option value="United States">United States</option>
+                                </select>
+                            </div>
+                            <div class="country">
+                                <label for="country">Country of residence</label>
+                                <select name="country" id="" required>
+                                    <option value="">select</option>
+                                    <option value="Antarctica">Antarctica</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="India">India</option>
+                                    <option value="United Arab Emirates">United Arab Emirates</option>
+                                    <option value="United Kingdom">United Kingdom</option>
+                                    <option value="United States">United States</option>
+                                </select>
+                            </div>
+                            <div class="mobNum">
+                                <label for="mobNum">Phone Numbers</label>
+                                <input required type="text" value="91&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;" name="mobNum" class="mobNumIp">
+                            </div>
+                        </div>
+                        <div class="fund">
+                            <p>I will fund my account at least $2000,000</p>
+                            <div class="fundIp">
+                                <input type="radio" required name="fund">
+                                <span class="radioBtnText">&nbsp;&nbsp;&nbsp;Yes</span>
+                                <input type="radio" name="fund">
+                                <span>&nbsp;&nbsp;&nbsp;No</span>
+                            </div>
+                        </div>
+                        <div class="accUse">
+                            <p>This account will be for personal use only</p>
+                            <div class="accIp">
+                                <input type="radio" required name="accUse">
+                                <span class="radioBtnText">&nbsp;&nbsp;&nbsp;Yes</span>
+                                <input type="radio" name="accUse">
+                                &nbsp;&nbsp;&nbsp;No</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="subscribe">
+                            <input type="checkbox" name="subscribe" class="subscribeIp">
+                            <label for="subscribe">&nbsp;&nbsp;&nbsp;We would like to send you information about our events, offers and more. Please uncheck the box if you do not want to receive this.</label>
+                        </div>
+                        <button type="submit" class="submitBtn">
+                            Apply Now
+                        </button>
+                        <p class="info">You must maintain an average monthly balance of $200,000 otherwise a monthly relationship fee of $150 will apply (this is the fee for maintaining the account).</p>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
+   
 <script src="./script.js"></script>
 </body>
 </html>
